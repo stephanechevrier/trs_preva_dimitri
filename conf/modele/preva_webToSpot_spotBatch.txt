@@ -1,0 +1,46 @@
+CONST
+  _DESTINATAIRES_MAIL = 'trs.edi@nojeca.com' + #13#10 + 'it@trs49.fr';
+    
+  
+  PROCEDURE DoSendMail(asErreur : string);
+  VAR lMail : TMail;
+  
+  BEGIN
+    lMail := TMail.Create;
+    
+    WITH lMail DO
+    TRY
+      IsIndy := true;
+      Titre := 'PREVA - ERREUR execution SpotBatch updatePrevaWebToSpot';
+      
+      asErreur := ChaineRemplacer(asErreur, #13#10, '@SAUT_LIGNE@');
+      asErreur := ChaineRemplacer(asErreur, #10, '_');
+      Message := ChaineRemplacer(asErreur, '@SAUT_LIGNE@', #13#10);
+      
+      Destinataires.text := _DESTINATAIRES_MAIL;
+        
+      Check;
+      EnvoiMail_;
+      
+    FINALLY
+      FreeAndNil(lMail);
+    END;
+  END;
+    
+    
+BEGIN
+
+TRY
+
+@@@REQUETES@@@
+
+EXCEPT
+    Trace('VERIFIER script SQL : ' + #13#10
+        + 'Exception = ' + ExceptionMessage);
+    DoSendMail('VERIFIER script SQL : ' + #13#10
+        + 'Exception = ' + ExceptionMessage);
+
+END;
+
+END.
+

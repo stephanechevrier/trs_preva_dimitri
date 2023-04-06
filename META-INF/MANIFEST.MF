@@ -1,0 +1,82 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 1.5.0_22-b03 (Sun Microsystems Inc.)
+Main-Class: org.krysalis.barcode4j.cli.Main
+Implementation-Title: Barcode4J Library
+Implementation-Version: 2.1.0
+Implementation-Vendor: The Barcode4J Project
+Implementation-URL: http://barcode4j.sourceforge.net
+Build-Id: 20101214-171903-CET (Jeremias [Windows XP 5.1 x86, Java 1.5.
+ 0_22-b03])
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://barcode4j.sourceforge.net
+Bundle-Name: Barcode4J
+Bundle-SymbolicName: org.krysalis.barcode4j
+Bundle-Vendor: The Barcode4J Project
+Bundle-Version: 2.1.0
+Export-Package: org.krysalis.barcode4j;version=2.1.0;uses:="org.apache
+ .avalon.framework.configuration,org.apache.avalon.framework.container
+ ",org.krysalis.barcode4j.impl;version=2.1.0;uses:=org.apache.avalon.f
+ ramework.configuration,org.krysalis.barcode4j.impl.codabar;version=2.
+ 1.0;uses:=org.apache.avalon.framework.configuration,org.krysalis.barc
+ ode4j.impl.code128;version=2.1.0;uses:=org.apache.avalon.framework.co
+ nfiguration,org.krysalis.barcode4j.impl.code39;version=2.1.0;uses:=or
+ g.apache.avalon.framework.configuration,org.krysalis.barcode4j.impl.d
+ atamatrix;version=2.1.0;uses:=org.apache.avalon.framework.configurati
+ on,org.krysalis.barcode4j.impl.fourstate;version=2.1.0;uses:=org.apac
+ he.avalon.framework.configuration,org.krysalis.barcode4j.impl.int2of5
+ ;version=2.1.0;uses:=org.apache.avalon.framework.configuration,org.kr
+ ysalis.barcode4j.impl.pdf417;version=2.1.0;uses:=org.apache.avalon.fr
+ amework.configuration,org.krysalis.barcode4j.impl.postnet;version=2.1
+ .0;uses:=org.apache.avalon.framework.configuration,org.krysalis.barco
+ de4j.impl.upcean;version=2.1.0;uses:=org.apache.avalon.framework.conf
+ iguration,org.krysalis.barcode4j.output;version=2.1.0,org.krysalis.ba
+ rcode4j.output.bitmap;version=2.1.0;uses:="javax.imageio,javax.imagei
+ o.metadata,javax.imageio.stream,org.w3c.dom",org.krysalis.barcode4j.o
+ utput.eps;version=2.1.0,org.krysalis.barcode4j.output.java2d;version=
+ 2.1.0,org.krysalis.barcode4j.output.svg;version=2.1.0;uses:="javax.xm
+ l.parsers,org.jdom,org.jdom.output,org.w3c.dom",org.krysalis.barcode4
+ j.servlet;version=2.1.0;uses:="javax.servlet,javax.servlet.http,javax
+ .xml.transform,javax.xml.transform.dom,javax.xml.transform.stream,org
+ .apache.avalon.framework.configuration,org.apache.avalon.framework.lo
+ gger",org.krysalis.barcode4j.tools;version=2.1.0;uses:="javax.xml.tra
+ nsform,javax.xml.transform.dom,javax.xml.transform.stream,org.apache.
+ avalon.framework.configuration,org.w3c.dom"
+Import-Package: javax.imageio,javax.imageio.metadata,javax.imageio.str
+ eam,javax.servlet;resolution:=optional,javax.servlet.http,javax.xml.p
+ arsers,javax.xml.transform,javax.xml.transform.dom,javax.xml.transfor
+ m.stream,org.apache.avalon.framework,org.apache.avalon.framework.conf
+ iguration,org.apache.avalon.framework.container,org.apache.avalon.fra
+ mework.logger,org.apache.commons.cli;resolution:=optional,org.apache.
+ tools.ant;resolution:=optional,org.apache.xalan.extensions;resolution
+ :=optional,org.apache.xalan.templates;resolution:=optional,org.jdom;r
+ esolution:=optional,org.jdom.output;resolution:=optional,org.krysalis
+ .barcode4j;version=2.1.0;uses:="org.apache.avalon.framework.configura
+ tion,org.apache.avalon.framework.container",org.krysalis.barcode4j.im
+ pl;version=2.1.0;uses:=org.apache.avalon.framework.configuration,org.
+ krysalis.barcode4j.impl.codabar;version=2.1.0;uses:=org.apache.avalon
+ .framework.configuration,org.krysalis.barcode4j.impl.code128;version=
+ 2.1.0;uses:=org.apache.avalon.framework.configuration,org.krysalis.ba
+ rcode4j.impl.code39;version=2.1.0;uses:=org.apache.avalon.framework.c
+ onfiguration,org.krysalis.barcode4j.impl.datamatrix;version=2.1.0;use
+ s:=org.apache.avalon.framework.configuration,org.krysalis.barcode4j.i
+ mpl.fourstate;version=2.1.0;uses:=org.apache.avalon.framework.configu
+ ration,org.krysalis.barcode4j.impl.int2of5;version=2.1.0;uses:=org.ap
+ ache.avalon.framework.configuration,org.krysalis.barcode4j.impl.pdf41
+ 7;version=2.1.0;uses:=org.apache.avalon.framework.configuration,org.k
+ rysalis.barcode4j.impl.postnet;version=2.1.0;uses:=org.apache.avalon.
+ framework.configuration,org.krysalis.barcode4j.impl.upcean;version=2.
+ 1.0;uses:=org.apache.avalon.framework.configuration,org.krysalis.barc
+ ode4j.output;version=2.1.0,org.krysalis.barcode4j.output.bitmap;versi
+ on=2.1.0;uses:="javax.imageio,javax.imageio.metadata,javax.imageio.st
+ ream,org.w3c.dom",org.krysalis.barcode4j.output.eps;version=2.1.0,org
+ .krysalis.barcode4j.output.java2d;version=2.1.0,org.krysalis.barcode4
+ j.output.svg;version=2.1.0;uses:="javax.xml.parsers,org.jdom,org.jdom
+ .output,org.w3c.dom",org.krysalis.barcode4j.servlet;version=2.1.0;use
+ s:="javax.servlet,javax.servlet.http,javax.xml.transform,javax.xml.tr
+ ansform.dom,javax.xml.transform.stream,org.apache.avalon.framework.co
+ nfiguration,org.apache.avalon.framework.logger",org.krysalis.barcode4
+ j.tools;version=2.1.0;uses:="javax.xml.transform,javax.xml.transform.
+ dom,javax.xml.transform.stream,org.apache.avalon.framework.configurat
+ ion,org.w3c.dom",org.w3c.dom,org.xml.sax
+

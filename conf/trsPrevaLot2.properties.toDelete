@@ -1,0 +1,157 @@
+#######################################################################
+# Configuration de PREVA lot 2
+#
+# 0001  29/12/2019  Creation  Jean-Noel CATTIN
+#######################################################################
+
+# Pour toutes les proprietes lies a l'environnement
+environnement=dev2
+#environnement=rec
+
+# Boîte aux lettres des messages EDI
+dev??.mail.host=81.252.102.165
+dev1.mail.host=imap.gmail.com
+dev1.mail.port=993
+dev1.mail.userName=trs.edi.test@gmail.com
+dev1.mail.password=tetsit%8
+dev1.mail.ssl=oui
+dev1.mail.protocol=imaps
+
+dev2.mail.host=imap.gmail.com
+dev2.mail.port=993
+dev2.mail.userName=trs.edi.test@gmail.com
+dev2.mail.password=tetsit%8
+dev2.mail.ssl=oui
+dev2.mail.protocol=imaps
+
+rec.mail.host=192.168.1.24
+# Port 143 pour IMAP
+rec.mail.port=143
+rec.mail.userName=trs-cerqueux\\edi.test
+rec.mail.password=tset%6
+rec.mail.ssl=non
+rec.mail.protocol=imap
+
+prod.mail.host=192.168.1.24
+# Port 143 pour IMAP
+prod.mail.port=143
+prod.mail.userName=trs-cerqueux\\commandesTrs
+prod.mail.password=commandestrs
+prod.mail.ssl=non
+prod.mail.protocol=imap
+
+
+# FTP
+rec.ftp.host=
+rec.ftp.login=
+rec.ftp.mdp=
+rec.ftp.port=
+
+prod.ftp.host=
+prod.ftp.login=
+prod.ftp.mdp=
+prod.ftp.port=
+
+# Répertoires pour les fichiers à fournir au site web
+# ------------------------------------------------------------------
+dev1.dir.out.archives=e:/temp/trs/preva/spotToWebLot2/archives
+dev1.dir.out.target=e:/temp/trs/preva/spotToWebLot2/target
+
+dev2.dir.out.archives=e:/temp/trs/preva/spotToWebLot2/archives
+dev2.dir.out.target=e:/temp/trs/preva/spotToWebLot2/target
+
+rec.dir.out.archives=d:/data/trs_preva/spotToWebLot2/archives
+rec.dir.out.target=d:/data/trs_preva/spotToWebLot2/target
+
+prod.dir.out.archives=c:/data/trs_preva/spotToWebLot2/archives
+prod.dir.out.target=c:/data/trs_preva/spotToWebLot2/target
+
+# Répertoires pour les fichiers à lire en provenance du site web
+# ------------------------------------------------------------------
+dev1.dir.in.archive=e:/temp/trs/preva/webToSpotLot2/archive
+dev1.dir.in.source=e:/temp/trs/preva/webToSpotLot2/source
+dev1.dir.in.working=e:/temp/trs/preva/webToSpotLot2/working
+
+dev2.dir.in.archive=e:/temp/trs/preva/webToSpotLot2/archive
+dev2.dir.in.source=e:/temp/trs/preva/webToSpotLot2/source
+dev2.dir.in.working=e:/temp/trs/preva/webToSpotLot2/working
+
+rec.dir.in.archive=d:/data/trs_preva/webToSpotLot2/archive
+rec.dir.in.source=d:/data/trs_preva/webToSpotLot2/source
+rec.dir.in.working=d:/data/trs_preva/webToSpotLot2/working
+
+prod.dir.in.archive=c:/data/trs_preva/webToSpotLot2/archive
+prod.dir.in.source=c:/data/trs_preva/webToSpotLot2/source
+prod.dir.in.working=c:/data/trs_preva/webToSpotLot2/working
+
+# Repertoire de configuration du traitement
+# ------------------------------------------------------------------
+dev1.dir.conf=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf
+dev2.dir.conf=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf
+rec.dir.conf=D:/appl/trs_preva/conf
+prod.dir.conf=c:/appl/trs_preva/conf
+
+# Répertoire de stockage de l'aide en ligne sur erreur intégration fichier
+# ------------------------------------------------------------------
+dev1.dir.helpOnError=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf\\helpOnError
+dev2.dir.helpOnError=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf\\helpOnError
+rec.dir.helpOnError=D:/appl/trs_preva/conf/helpOnError
+prod.dir.helpOnError=c:/appl/trs_preva/conf/helpOnError
+
+# Répertoire de stockage de l'aide en ligne fournie dans notification après intégration fichier
+# ------------------------------------------------------------------
+dev1.dir.helpAfterImport=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf\\helpAfterImport
+dev2.dir.helpAfterImport=E:\\data\\doc\\nojeca\\commande\\trs\\edi\\plateforme\\eclipse\\trs_preva\\conf\\helpAfterImport
+rec.dir.helpAfterImport=D:/appl/trs_preva/conf/helpAfterImport
+prod.dir.helpAfterImport=c:/appl/trs_preva/conf/helpAfterImport
+
+# Fichier de proprietes pour la base de données Wintrans
+# ------------------------------------------------------------------
+dev1.dbPropFileName=E:/data/doc/nojeca/commande/trs/edi/plateforme/eclipse/trs_preva/conf/trsPreva.dev1.database.properties
+dev2.dbPropFileName=E:/data/doc/nojeca/commande/trs/edi/plateforme/eclipse/trs_preva/conf/trsPreva.dev2.database.properties
+rec.dbPropFileName=D:/appl/trs_preva/conf/trsPreva.rec.database.properties
+prod.dbPropFileName=c:/appl/trs_preva/conf/trsPreva.prod.database.properties
+
+# Forçage coordonnées destinataire
+# ----------------------------------------------------
+rec.destinataire.eMail.force=oui
+rec.destinataire.eMail=Prevatrs49@gmail.com
+
+rec.destinataire.telephone.force=oui
+// Numéro Jacques HORVATH
+rec.destinataire.telephone=0760834255
+
+# Réponses négatives : nombre maxi
+reponsesNegatives.nombreMaxi=2
+
+
+# Ligne d'en-tête pour le fichier à destination de Spot
+webToSpot.header=order_number;ot_number;op_number;plan_number;sav_number;creation_date;agency_code;response;response_date;access_type;operator_username;number_of_negative_responses;delivery_agency_code;pickup_agency_code;delivery_estimated_date
+
+# Demande d'export pour test volumes importants
+dev2.spotToWeb.grosVolume=oui
+rec.spotToWeb.grosVolume=oui
+
+
+# UPDATE en base de données Urios
+# --------------------------------------------------------------------------------------
+dev1.webToSpot.update.cmd=
+dev2.webToSpot.update.cmd=
+rec.webToSpot.update.cmd=
+prod.webToSpot.tdm.update.cmd=cmd /c start /wait c:/appl/trs_preva/trs_preva_webToSpotLot2_spotBatch.bat
+
+dev1.webToSpot.update.dirName=
+dev2.webToSpot.update.dirName=
+rec.webToSpot.update.dirName=
+prod.webToSpot.update.dirName=C:/Program Files (x86)/Urios/SpotBatch/updatePrevaWebToSpotLot2
+
+webToSpot.update.fileName=updatePreva.spt
+
+# Pour ne pas exécuter l'update (oui par défaut)
+# pour des raisons de test, on peut ne pas vouloir déclencher l'UPDATE
+webToSpot.update.execute=non
+
+dev1.webToSpot.update.template=
+dev2.webToSpot.update.template=
+rec.webToSpot.update.template=
+prod.webToSpot.update.template=c:/appl/trs_preva/conf/modele/preva_webToSpotLot2_spotBatch.txt

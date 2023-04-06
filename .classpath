@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/trs_commun"/>
+	<classpathentry kind="lib" path="/trs_commun/lib/edtftpj-pro.jar"/>
+	<classpathentry kind="lib" path="/trs_commun/lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="/trs_commun/lib/log4j-api-2.19.0.jar"/>
+	<classpathentry kind="lib" path="/trs_commun/lib/log4j-core-2.19.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

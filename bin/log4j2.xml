@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%C{2} %m %n"/>
+		</Console>
+        <RollingFile name="logFile" fileName="C:/_Projet_java/Log/trsPreva.log" filePattern="C:/_Projet_java/Log/$${date:yyyy-MM}/trs-%d{yyyyMMdd}-%i.log.gz">
+            <PatternLayout>
+                <pattern>%d %p %C{2} [%t] %m%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="5 MB"/>
+            </Policies>
+        </RollingFile>
+		<SMTP name="mail-fatal" subject="TRS - PREVA (DEV) - Fatal Error" to="d.buffard@trs49.fr" from="wintrans@trs49.fr" 
+		smtpHost="smtp.office365.com" smtpPort="587" smtpProtocol="smtp" smtpUsername="wintrans@trs49.fr" smtpPassword="wintrans79" 
+		bufferSize="50">
+		</SMTP>
+		<SMTP name="mail-error" subject="TRS - PREVA (DEV) - Error"       to="d.buffard@trs49.fr" from="wintrans@trs49.fr" 
+		smtpHost="smtp.office365.com" smtpPort="587" smtpProtocol="smtp" smtpUsername="wintrans@trs49.fr" smtpPassword="wintrans79" 
+		bufferSize="50">
+		</SMTP>
+ 	</Appenders>
+	<Loggers>
+		<Logger name="com.trs.utils.properties.Properties" level="info" additivity="false">
+			<AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="logFile"/>
+		</Logger>
+		
+		<Root level="trace">
+			<AppenderRef ref="STDOUT"/>
+			<AppenderRef ref="logFile"/>
+			<AppenderRef ref="mail-fatal" level="fatal"/>
+			<AppenderRef ref="mail-error" level="error"/>
+		</Root>
+    </Loggers>
+</Configuration>
